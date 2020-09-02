@@ -1,0 +1,7 @@
+isodate==0.6.0
+owlrl==5.2.1
+pyparsing==2.4.7
+pyshacl==0.12.2
+rdflib==5.0.0
+rdflib-jsonld==0.5.0
+six==1.15.0

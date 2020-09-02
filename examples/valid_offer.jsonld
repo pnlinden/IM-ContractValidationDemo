@@ -1,0 +1,34 @@
+{
+    "@context": "https://w3id.org/idsa/contexts/context.jsonld",
+    "@type": "ids:ContractOffer",
+    "@id": "https://mdmconnector.ids.isst.fraunhofer.de/ResourceCatalog/e75d21a7/offer1/",
+    "ids:provider": {"@id": "https://iais.fraunhofer.de/"},
+    "ids:permission": {
+        "@type": "ids:Permission",
+        "ids:assigner": {"@id": "https://iais.fraunhofer.de/"},
+        "ids:target": {"@id": "https://mdmconnector.ids.isst.fraunhofer.de/ResourceCatalog/e75d21a7/5128c92c/9a039204/"},
+        "ids:action": {"@id": "idsc:USE"},
+        "ids:constraint": [ {
+            "@type": "ids:Constraint",
+            "ids:leftOperand": { "@id": "idsc:POLICY_EVALUATION_TIME" },
+            "ids:operator": { "@id": "idsc:AFTER" },
+            "ids:rightOperand": {
+                "@value": "2020-07-08T15:35:34.589+02:00",
+                "@type": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+            }
+        }, {
+            "@type": "ids:Constraint",
+            "ids:leftOperand": { "@id": "idsc:POLICY_EVALUATION_TIME" },
+            "ids:operator": { "@id": "idsc:BEFORE" },
+            "ids:rightOperand": {
+                "@value": "2020-12-08T15:35:34.589+02:00",
+                "@type": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+            }
+        } ],
+        "ids:postDuty": {
+            "@type": "ids:Duty",
+            "ids:assigner": {"@id": "https://iais.fraunhofer.de/"},
+            "ids:action": { "@id": "idsc:LOG" }
+        }
+    }
+}
