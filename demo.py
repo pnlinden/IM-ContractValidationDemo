@@ -30,7 +30,7 @@ data_format = data_format_mapping.get(file_ext, "")
 
 if not data_format:
     print("Please provide an input file with one of the following file extentions:")
-    print(data_format_mapping.keys.toString())
+    print([key for key in data_format_mapping.keys()])
     exit(0)   
 
 data = ""
