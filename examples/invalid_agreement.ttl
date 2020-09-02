@@ -29,7 +29,7 @@ ex:ExampleAgreement
                 ids:leftOperand   idsc:PAY_AMOUNT ;
                 ids:operator      "lessThan" ; # WRONG: self-defined string operator. Needs to be a ids:BinaryOperator!
                 ids:rightOperand  25 ;
-                ids:unit          "http://dbpedia.org/resource/Euro"^^xsd:anyURI ;
+                ids:unit          <http://dbpedia.org/resource/Euro> ;
             ]
         ]
     ] .
